@@ -10,7 +10,7 @@ class Api::AnalysesController < ApplicationController
   def handle_api_responce
       analysis = Analysis.new
 
-      if params[:input] != nil
+      if params[:input] != nil && params[:input].length > 0
           analysis.argued_text = params[:input].gsub('"', '')
           sanitized_input = params[:input].downcase.gsub(/[^a-z0-9\s]/i, '')
 
@@ -21,10 +21,15 @@ class Api::AnalysesController < ApplicationController
           analysis.ppos = sentiment_analysis["P_Pos"]
           analysis.pneg = sentiment_analysis["P_Neg"]
 
+          render json: analysis
           print(output)
+      else
+          render json: {
+              :error => "Empty input argument"
+          }
       end
 
-      render json: analysis
+
   end
 
   # def show
