@@ -10,11 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171228181303) do
+ActiveRecord::Schema.define(version: 20171231045625) do
 
   create_table "analyses", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "classification"
     t.float "ppos"
     t.float "pneg"

@@ -4,36 +4,50 @@ class Api::AnalysesController < ApplicationController
 
   def index
     # render json: Analysis.all
-
-    analysis = Analysis.new
-
-    if params[:input] != nil
-        analysis = Analysis.new
-        analysis.argued_text = params[:input]
-    end
-
-    render json: analysis
-
+    handle_api_responce
   end
 
-  def show
-    list = Analysis.find(params[:id])
-    render json: list
+  def handle_api_responce
+      analysis = Analysis.new
+
+      if params[:input] != nil
+          analysis = Analysis.new
+          analysis.argued_text = params[:input]
+          analysis.save
+      end
+
+      render json: analysis
   end
 
-  def create
-    analysis = Analysis.new
-    analysis.argued_text = params[:input]
+  def rupy_test
+      require "rupy"
 
-    if analysis.save
-        print("Input Param: " + params[:input])
-      head 200
-    else
-        print("Not Saved")
-      head 500
-    end
+      Rupy.start # start the Python VM
 
+      cPickle = Rupy.import("cPickle")
+      p cPickle.dumps("Testing rupy").rubify
+
+      Rupy.stop # stop the Python VM
   end
+
+  # def show
+  #   list = Analysis.find(params[:id])
+  #   render json: list
+  # end
+
+  # def create
+  #   analysis = Analysis.new
+  #   analysis.argued_text = params[:input]
+  #
+  #   if analysis.save
+  #       print("Input Param: " + params[:input])
+  #     head 200
+  #   else
+  #       print("Not Saved")
+  #     head 500
+  #   end
+  #
+  # end
 
   private
 
