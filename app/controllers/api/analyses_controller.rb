@@ -11,10 +11,10 @@ class Api::AnalysesController < ApplicationController
       analysis = Analysis.new
 
       if params[:input] != nil
-          analysis = Analysis.new
-          analysis.argued_text = params[:input]
+          analysis.argued_text = params[:input].gsub('"', '')
+          sanitized_input = params[:input].downcase.gsub(/[^a-z0-9\s]/i, '')
 
-          output = `python Python-Sentiment-Analysis-Program/get_sentiment.py #{params[:input]}`
+          output = `python Python-Sentiment-Analysis-Program/get_sentiment.py "#{sanitized_input}"`
           sentiment_analysis = JSON.parse(output)
 
           analysis.classification = sentiment_analysis["classification"]
@@ -22,7 +22,6 @@ class Api::AnalysesController < ApplicationController
           analysis.pneg = sentiment_analysis["P_Neg"]
 
           print(output)
-          analysis.save
       end
 
       render json: analysis
