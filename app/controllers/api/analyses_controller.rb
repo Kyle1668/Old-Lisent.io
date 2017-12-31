@@ -13,21 +13,19 @@ class Api::AnalysesController < ApplicationController
       if params[:input] != nil
           analysis = Analysis.new
           analysis.argued_text = params[:input]
+
+          output = `python Python-Sentiment-Analysis-Program/get_sentiment.py #{params[:input]}`
+          sentiment_analysis = JSON.parse(output)
+
+          analysis.classification = sentiment_analysis["classification"]
+          analysis.ppos = sentiment_analysis["P_Pos"]
+          analysis.pneg = sentiment_analysis["P_Neg"]
+
+          print(output)
           analysis.save
       end
 
       render json: analysis
-  end
-
-  def rupy_test
-      require "rupy"
-
-      Rupy.start # start the Python VM
-
-      cPickle = Rupy.import("cPickle")
-      p cPickle.dumps("Testing rupy").rubify
-
-      Rupy.stop # stop the Python VM
   end
 
   # def show
