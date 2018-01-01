@@ -17,3 +17,5 @@ ruamel-yaml==0.11.14
 six==1.11.0
 urllib3==1.22
 http://pyyaml.org/download/pyyaml/PyYAML-3.10.tar.gz
+nltk==3.2.5
+textblob==0.15.0
