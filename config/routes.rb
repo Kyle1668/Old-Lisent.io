@@ -4,5 +4,5 @@ Rails.application.routes.draw do
     resources :analyses
   end
 
-  resources :analyses
+  # resources :analyses
 end
