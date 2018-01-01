@@ -8,7 +8,6 @@ enum34==1.1.6
 futures==3.2.0
 idna==2.6
 ipaddress==1.0.18
-nltk==3.2.5
 pycosat==0.6.3
 pycparser==2.18
 pyOpenSSL==17.5.0
@@ -16,5 +15,7 @@ PySocks==1.6.7
 requests==2.18.4
 ruamel-yaml==0.11.14
 six==1.11.0
-textblob==0.15.0
 urllib3==1.22
+http://pyyaml.org/download/pyyaml/PyYAML-3.10.tar.gz
+nltk==3.2.5
+textblob==0.15.0
