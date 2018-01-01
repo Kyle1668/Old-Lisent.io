@@ -8,9 +8,8 @@ class Api::AnalysesController < ApplicationController
   end
 
   def handle_api_responce
-      analysis = Analysis.new
-
       if params[:input] != nil && params[:input].length > 0
+          analysis = Analysis.new
           analysis.argued_text = params[:input].gsub('"', '')
           sanitized_input = params[:input].downcase.gsub(/[^a-z0-9\s]/i, '')
 
@@ -28,8 +27,6 @@ class Api::AnalysesController < ApplicationController
               :error => "Empty input argument"
           }
       end
-
-
   end
 
   # def show
