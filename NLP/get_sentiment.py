@@ -1,9 +1,10 @@
 import sys
 import json
-from textblob import TextBlob
+
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
+from textblob import TextBlob
 from textblob.sentiments import NaiveBayesAnalyzer
 
 
