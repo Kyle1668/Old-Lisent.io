@@ -1,3 +1,4 @@
+import urllib3
 import sys
 import json
 from textblob import TextBlob
