@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171231065215) do
+ActiveRecord::Schema.define(version: 20180107025935) do
 
   create_table "analyses", force: :cascade do |t|
     t.string "classification"
@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(version: 20171231065215) do
     t.float "pneg"
     t.text "argued_text"
     t.string "user_key"
+  end
+
+  create_table "welcomes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
