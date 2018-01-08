@@ -4,19 +4,19 @@ Sentiment Analysis: The process of computationally identifying and categorizing 
 
 ### How to use
 - Enter the desired text into the "input" argument of the below path
-  - `http://lisent.herokuapp.com/compute?input="TEXT"`
+  - `http://lisent.herokuapp.com/get?input="TEXT"`
  
 ### Example
 `input = "The Last Jedi was the best Star Wars movie ever!" `
 
 ```javascript
 {
-id: null , 
-classification: "Positive", 
-ppos: 0.7275216854729308, 
-pneg: 0.2724783145270687, 
-argued_text: "The Last Jedi was the best Star Wars movie ever!", 
-user_key: null,
+    id: null , 
+    classification: "Positive", 
+    ppos: 0.7275216854729308, 
+    pneg: 0.2724783145270687, 
+    argued_text: "The Last Jedi was the best Star Wars movie ever!", 
+    user_key: null,
 }
 ```
 
@@ -31,4 +31,4 @@ user_key: null,
   - [Kyle O'Brien Linkedin](www.linkedin.com/in/kyle1668)
   - [TextBlob Documentation](http://textblob.readthedocs.io/en/dev/)
   - [Python NLTK Documentation](http://www.nltk.org/)
-  - [Sentiment Analysis Wikipedia](https://en.wikipedia.org/wiki/Sentiment_analysis)
+  - [Sentiment Analysis - Wikipedia](https://en.wikipedia.org/wiki/Sentiment_analysis)

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   root 'abouts#index'
-  get '/compute', to: 'api/analyses#index'
+  get '/get', to: 'api/analyses#index'
+
   # get '/api', to: 'api/analyses#index'
 
   # namespace :api do
