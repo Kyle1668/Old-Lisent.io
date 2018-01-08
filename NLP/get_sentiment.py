@@ -1,6 +1,7 @@
 import urllib3
 import sys
 import json
+import nltk
 from textblob import TextBlob
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
