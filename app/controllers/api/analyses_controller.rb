@@ -15,7 +15,7 @@ class Api::AnalysesController < ApplicationController
 
 
       output = `python NLP/get_sentiment.py "#{sanitized_input}"`
-      sentiment_analysis = JSON.parse(output.split('____________________')[1])
+      sentiment_analysis = JSON.parse(output)
 
       analysis.classification = sentiment_analysis['classification']
       analysis.ppos = sentiment_analysis['P_Pos']
