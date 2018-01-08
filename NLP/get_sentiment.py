@@ -56,6 +56,7 @@ def convert_data_to_json(sentiment_data):
 
 
 def main():
+    print("____________________")
     if len(sys.argv) >= 1:
         entered_text = format_input()
         sentiment_data = get_sentiment(entered_text)
