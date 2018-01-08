@@ -38,7 +38,7 @@ def get_sentiment(argued_text):
 
 
 def convert_data_to_json(sentiment_data):
-    if abs(sentiment_data.p_pos - sentiment_data.p_neg) is .00001:
+    if str(sentiment_data.p_pos) is str(sentiment_data.p_neg):
         return_classification = "Neutral"
     elif sentiment_data.classification is "pos":
         return_classification = "Positive"
