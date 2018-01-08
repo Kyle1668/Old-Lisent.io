@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    font-family: Lato;
+    color: #383737;
+}
+
+li {
+margin-top: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #383737;
+    font-weight: lighter;
+}
+
+small {
+    font-size: 20px;
+}
+
+body {
+    background-color: #91afc4;
+}
+
+.jumbotron {
+    background-color: whitesmoke;
+}
+
+.example {
+    background-color: #b3b3b3;
+}
+
+.example h2 {
+    color: #383737;
+}
+
+.code h5 {
+    font-size: 20px;
+    color: #3a92c8;
+}
+
+key {
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+value {
+    color: green;
+}
+
+.json {
+    color: ;
+}

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :welcomes
+  root 'abouts#index'
+
   namespace :api do
     resources :analyses
   end
