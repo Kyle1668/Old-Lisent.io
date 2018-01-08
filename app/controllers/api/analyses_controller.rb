@@ -13,6 +13,7 @@ class Api::AnalysesController < ApplicationController
       analysis.argued_text = params[:input].gsub('"', '')
       sanitized_input = params[:input].downcase.gsub(/[^a-z0-9\s]/i, '')
 
+
       output = `python NLP/get_sentiment.py "#{sanitized_input}"`
       sentiment_analysis = JSON.parse(output)
 
