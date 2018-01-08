@@ -8,7 +8,7 @@ class Api::AnalysesController < ApplicationController
   end
 
   def handle_api_responce
-    if params[:input] != nil && params[:input].length > 0
+    if params[:input] != nil && params[:input] != '""'
       analysis = Analysis.new
       analysis.argued_text = params[:input].gsub('"', '')
       sanitized_input = params[:input].downcase.gsub(/[^a-z0-9\s]/i, '')
