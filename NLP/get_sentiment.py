@@ -1,10 +1,8 @@
-import urllib3
 import sys
 import json
-import nltk
 from textblob import TextBlob
-from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+from stop_words import english_stop_words
 from nltk.tokenize import word_tokenize
 from textblob.sentiments import NaiveBayesAnalyzer
 
@@ -16,6 +14,7 @@ def format_input():
 
     porter_algorithm = PorterStemmer()
     # stop_words = set(stopwords.words("English"))
+    stop_words = english_stop_words
 
     # Tokenize the text by word and remove punctuation.
     words = word_tokenize(user_input)
@@ -23,9 +22,9 @@ def format_input():
 
     if len(user_input) != 0:
         for in_word in tokenized_words:
-            stemmed_word = porter_algorithm.stem(in_word)
-            formatted_words.append(stemmed_word)
-            # if in_word not in stop_words:
+            if in_word not in stop_words:
+                stemmed_word = porter_algorithm.stem(in_word)
+                formatted_words.append(stemmed_word)
 
     for word in formatted_words:
         return_text += (word + " ")
@@ -55,7 +54,6 @@ def convert_data_to_json(sentiment_data):
 
 
 def main():
-
     if len(sys.argv) >= 1:
         entered_text = format_input()
         sentiment_data = get_sentiment(entered_text)
