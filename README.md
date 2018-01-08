@@ -7,7 +7,7 @@ Sentiment Analysis: The process of computationally identifying and categorizing 
   - `http://lisent.herokuapp.com/get?input="TEXT"`
  
 ### Example
-`input = "The Last Jedi was the best Star Wars movie ever!" `
+`  http://lisent.herokuapp.com/get?input="The Last Jedi was the best Star Wars movie ever!"`
 
 ```javascript
 {
@@ -31,4 +31,4 @@ Sentiment Analysis: The process of computationally identifying and categorizing 
   - [Kyle O'Brien Linkedin](www.linkedin.com/in/kyle1668)
   - [TextBlob Documentation](http://textblob.readthedocs.io/en/dev/)
   - [Python NLTK Documentation](http://www.nltk.org/)
-  - [Sentiment Analysis - Wikipedia](https://en.wikipedia.org/wiki/Sentiment_analysis)
+  - [Sentiment Analysis Wikipedia](https://en.wikipedia.org/wiki/Sentiment_analysis)
