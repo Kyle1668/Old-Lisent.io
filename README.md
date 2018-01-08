@@ -1,24 +1,34 @@
-# README
+# Lisent :: Sentiment Analysis API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sentiment Analysis: The process of computationally identifying and categorizing opinions expressed in a piece of text, especially in order to determine whether the writer's attitude towards a particular topic, product, etc., is positive, negative, or neutral.
 
-Things you may want to cover:
+### How to use
+- Enter the desired text into the "input" argument of the below path
+  - `http://lisent.herokuapp.com/compute?input="TEXT"`
+ 
+### Example
+`input = "The Last Jedi was the best Star Wars movie ever!" `
 
-* Ruby version
+```javascript
+{
+id: null , 
+classification: "Positive", 
+ppos: 0.7275216854729308, 
+pneg: 0.2724783145270687, 
+argued_text: "The Last Jedi was the best Star Wars movie ever!", 
+user_key: null,
+}
+```
 
-* System dependencies
+### Developed With!
+  - Ruby on Rails
+  - Deployed on Heroku
+  - Python
+    - Natural Lanuage Toolkit
+    - Textblob
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Links
+  - [Kyle O'Brien Linkedin](www.linkedin.com/in/kyle1668)
+  - [TextBlob Documentation](http://textblob.readthedocs.io/en/dev/)
+  - [Python NLTK Documentation](http://www.nltk.org/)
+  - [Sentiment Analysis Wikipedia](https://en.wikipedia.org/wiki/Sentiment_analysis)
