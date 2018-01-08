@@ -7,6 +7,7 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from textblob.sentiments import NaiveBayesAnalyzer
 
+nltk.download('stopwords')
 
 def format_input():
     user_input = sys.argv[1]
