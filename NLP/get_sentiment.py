@@ -8,6 +8,7 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from textblob.sentiments import NaiveBayesAnalyzer
 
+nltk.download('stopwords')
 
 def format_input():
     user_input = sys.argv[1]
@@ -55,6 +56,7 @@ def convert_data_to_json(sentiment_data):
 
 
 def main():
+
     if len(sys.argv) >= 1:
         entered_text = format_input()
         sentiment_data = get_sentiment(entered_text)
