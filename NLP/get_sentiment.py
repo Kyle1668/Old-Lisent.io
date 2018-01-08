@@ -15,7 +15,7 @@ def format_input():
     return_text = "test"
 
     porter_algorithm = PorterStemmer()
-    stop_words = set(stopwords.words("English"))
+    # stop_words = set(stopwords.words("English"))
 
     # Tokenize the text by word and remove punctuation.
     words = word_tokenize(user_input)
@@ -23,9 +23,9 @@ def format_input():
 
     if len(user_input) != 0:
         for in_word in tokenized_words:
-            if in_word not in stop_words:
-                stemmed_word = porter_algorithm.stem(in_word)
-                formatted_words.append(stemmed_word)
+            stemmed_word = porter_algorithm.stem(in_word)
+            formatted_words.append(stemmed_word)
+            # if in_word not in stop_words:
 
     for word in formatted_words:
         return_text += (word + " ")
