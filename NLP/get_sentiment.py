@@ -29,8 +29,6 @@ def format_input():
     for word in formatted_words:
         return_text += (word + " ")
 
-    print(return_text)
-
     return return_text
 
 
