@@ -23,12 +23,13 @@ def format_input():
     if len(user_input) != 0:
         for in_word in tokenized_words:
             if in_word not in stop_words:
-                # stemmed_word = porter_algorithm.stem(in_word)
-                # formatted_words.append(stemmed_word)
-                formatted_words.append(in_word)
+                stemmed_word = porter_algorithm.stem(in_word)
+                formatted_words.append(stemmed_word)
 
     for word in formatted_words:
         return_text += (word + " ")
+
+    print(return_text)
 
     return return_text
 
@@ -39,7 +40,7 @@ def get_sentiment(argued_text):
 
 
 def convert_data_to_json(sentiment_data):
-    if str(sentiment_data.p_pos) is str(sentiment_data.p_neg):
+    if abs(sentiment_data.p_pos - sentiment_data.p_neg) <= .1:
         return_classification = "Neutral"
     elif sentiment_data.classification is "pos":
         return_classification = "Positive"
