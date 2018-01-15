@@ -10,7 +10,7 @@ from textblob.sentiments import NaiveBayesAnalyzer
 def format_input():
     user_input = sys.argv[1]
     formatted_words = []
-    return_text = "text"
+    return_text = ""
 
     porter_algorithm = PorterStemmer()
     # stop_words = set(stopwords.words("English"))
