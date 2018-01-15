@@ -5,7 +5,7 @@ from nltk.stem import PorterStemmer
 from stop_words import english_stop_words
 from nltk.tokenize import word_tokenize
 from textblob.sentiments import NaiveBayesAnalyzer
-g
+
 
 def format_input():
     user_input = sys.argv[1]

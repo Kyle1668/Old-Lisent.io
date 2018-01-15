@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d29d85d-2dca-417b-af97-e815e7c20cf2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/abouts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/abouts/index.html.erb" />
-    </list>
+    <list default="true" id="0d29d85d-2dca-417b-af97-e815e7c20cf2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -69,8 +65,8 @@
       <file leaf-file-name="get_sentiment.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NLP/get_sentiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -129,7 +125,6 @@
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/NLP/get_sentiment.py" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/abouts.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/about.scss" />
         <option value="$PROJECT_DIR$/app/controllers/api/analyses_controller.rb" />
@@ -140,6 +135,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/abouts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/NLP/get_sentiment.py" />
       </list>
     </option>
   </component>
@@ -433,12 +429,12 @@
       <workItem from="1515528515724" duration="793000" />
       <workItem from="1515572076424" duration="366000" />
       <workItem from="1515717803137" duration="506000" />
-      <workItem from="1515978255834" duration="116000" />
+      <workItem from="1515978255834" duration="190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30767000" />
+    <option name="totallyTimeSpent" value="30841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -451,7 +447,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Quokka" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35135135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35135135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -850,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NLP/get_sentiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding />
         </state>
       </provider>
