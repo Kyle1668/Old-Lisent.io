@@ -5,7 +5,7 @@ from nltk.stem import PorterStemmer
 from stop_words import english_stop_words
 from nltk.tokenize import word_tokenize
 from textblob.sentiments import NaiveBayesAnalyzer
-
+g
 
 def format_input():
     user_input = sys.argv[1]
@@ -23,8 +23,9 @@ def format_input():
     if len(user_input) != 0:
         for in_word in tokenized_words:
             if in_word not in stop_words:
-                stemmed_word = porter_algorithm.stem(in_word)
-                formatted_words.append(stemmed_word)
+                # stemmed_word = porter_algorithm.stem(in_word)
+                # formatted_words.append(stemmed_word)
+                formatted_words.append(in_word)
 
     for word in formatted_words:
         return_text += (word + " ")
