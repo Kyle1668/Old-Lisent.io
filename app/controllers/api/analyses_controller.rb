@@ -14,7 +14,7 @@ class Api::AnalysesController < ApplicationController
       sanitized_input = params[:input].downcase.gsub(/[^a-z0-9\s]/i, '')
 
       # Install NLTK Corpus
-      `python NLP/install_corp.py`
+      # `python NLP/install_corp.py`
 
       output = `python NLP/get_sentiment.py "#{sanitized_input}"`
       sentiment_analysis = JSON.parse(output)
