@@ -28,5 +28,5 @@ requests = "==2.18.4"
 "ruamel.yaml" = "==0.11.14"
 "urllib3" = "==1.22"
 "71e0823" = {file = "http://pyyaml.org/download/pyyaml/PyYAML-3.10.tar.gz"}
-nltk = "==3.2.5"
+nltk = "==3.4.5"
 textblob = "==0.15.0"
